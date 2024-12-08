@@ -41,16 +41,16 @@ body{
 }
 
 .inicio{
-    background-color: darkgoldenrod;
+    background-color: grey;
 }
 .nosotros{
-    background-color: coral;
+    background-color: darkgrey;
 }
 .servicios{
-    background-color: chocolate;
+    background-color: gray;
 }
 .contactos{
-    background-color: darkorange;
+    background-color: darkgray;
 }
 
 
