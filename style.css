@@ -11,6 +11,10 @@ body{
     height: 100%;
     margin: 0;
 }
+.align-items{
+    display: flex;
+    align-items: center;
+}
 .bar{
     padding: 0rem 2rem;
     display: flex;
@@ -36,11 +40,19 @@ body{
     font-size: 2.5rem;
 }
 
-
-.align-items{
-    display: flex;
-    align-items: center;
+.inicio{
+    background-color: darkgoldenrod;
 }
+.nosotros{
+    background-color: coral;
+}
+.servicios{
+    background-color: chocolate;
+}
+.contactos{
+    background-color: darkorange;
+}
+
 
 .bar img{
     height: 80%;
