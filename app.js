@@ -1,27 +1,27 @@
 let boton = document.getElementsByClassName("bot");
 let pag = document.getElementsByClassName("pag");
-
+let altura = document.querySelector(".pag").clientHeight
 window.addEventListener("scroll", ()=>{
 
-    if (window.scrollY <= window.screen.height*0.5){
+    if (window.scrollY <= altura*0.5){
         boton[0].classList.add("activado");
         boton[1].classList.remove("activado");
         boton[2].classList.remove("activado");
         boton[3].classList.remove("activado");
     }
-    if (window.scrollY > window.screen.height*0.5 && window.scrollY < window.screen.height*1.5){
+    if (window.scrollY > altura*0.5 && window.scrollY < altura*1.5){
         boton[0].classList.remove("activado");
         boton[1].classList.add("activado");
         boton[2].classList.remove("activado");
         boton[3].classList.remove("activado");
     }
-    if (window.scrollY > window.screen.height*1.5 && window.scrollY < window.screen.height*2.5){
+    if (window.scrollY > altura*1.5 && window.scrollY < altura*2.5){
         boton[0].classList.remove("activado");
         boton[1].classList.remove("activado");
         boton[2].classList.add("activado");
         boton[3].classList.remove("activado");
     }
-    if (window.scrollY > window.screen.height*2.5 && window.scrollY < window.screen.height*3.5){
+    if (window.scrollY > altura*2.5 && window.scrollY < altura*3.5){
         boton[0].classList.remove("activado");
         boton[1].classList.remove("activado");
         boton[2].classList.remove("activado");
