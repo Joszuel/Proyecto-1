@@ -48,7 +48,7 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: chocolate;
-    transition: background-color 0.5s ease-in;
+    transition: background-color 0.3s ease-in 0.2s;
 }
 .align-items{
     display: flex;
