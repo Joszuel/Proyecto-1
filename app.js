@@ -1,8 +1,6 @@
 let pag = document.getElementsByClassName("bot");
 
 window.onscroll = function() {
-    console.log("vertical "+ window.scrollY)
-    console.log("horizontal "+ window.scrollX)
 
     if (window.scrollY <= window.innerHeight){
         pag[0].classList.add("activado");
