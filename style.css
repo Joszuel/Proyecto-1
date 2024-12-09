@@ -21,11 +21,12 @@ body{
     font-size:x-small;
     color: aliceblue;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     transition: all 0.5s;
 }
 
-.activado{
+.activado{  
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: chocolate;
     color: black;
@@ -53,9 +54,9 @@ body{
     right: 0;
     margin: auto;
 
-    -webkit-box-shadow: 0px 1.6rem 0px 0px rgba(231,166,26,1);
-    -moz-box-shadow: 0px 1.6rem 0px 0px rgba(231,166,26,1);
-    box-shadow: 0px 1.6rem 0px 0px rgba(231,166,26,1);
+    -webkit-box-shadow: 0px 1.5rem 0px 0px rgba(231,166,26,1);
+    -moz-box-shadow: 0px 1.5rem 0px 0px rgba(231,166,26,1);
+    box-shadow: 0px 1.5rem 0px 0px rgba(231,166,26,1);
 
 }
 
@@ -84,23 +85,18 @@ body{
 
 
 .bar img{
-    height: 80%;
-}
-.bar div fieldset{
-    display: none;
-}
-.bar fieldset input{
+    height: 90%;
 }
 
 
 
 @media (min-width: 720px){
-    .bar div a{
+    .bot{
         font-size: medium;
         display: block;
         color: aliceblue;
         text-decoration: none;
         margin: 0 1rem;
-        padding: 0 0.5rem;
+        padding: 0.5rem 1rem;
     }
 }
