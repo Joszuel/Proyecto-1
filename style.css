@@ -36,14 +36,6 @@ body{
     background-color: black;
     border: none;
 }
-@media (hover: hover){
-    .bot:hover{
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: chocolate;
-    transition: background-color 0.5s;
-}
-}
 
 
 .activado{  
@@ -51,6 +43,21 @@ body{
     border-radius: 0.5rem;
     background-color: chocolate;
     transition: background-color 0.3s ease-in 0.2s;
+}
+@media (hover:hover){
+    .bot:hover{
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: white;
+        color: black;
+        transition: background-color 0.5s;
+    }
+    .activado:hover{
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: chocolate;
+        color: white;
+    }
 }
 .align-items{
     display: flex;
