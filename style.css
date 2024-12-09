@@ -8,11 +8,6 @@ html{
 
 *, *:before, *:after { box-sizing: inherit; }
 
-@media (min-width: 720px){
-    html{
-        scroll-snap-type: y proximity;
-    }
-}
 body{
     box-sizing: inherit;
     font-size: 1.6rem;
