@@ -82,7 +82,7 @@ body{
 
 
 .pag{
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     height: 100vh;
     display: flex;
     justify-content: center;
