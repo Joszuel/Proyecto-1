@@ -44,6 +44,7 @@ body{
     background-color: chocolate;
     transition: background-color 0.3s ease-in 0.2s;
 }
+
 @media (hover:hover){
     .bot:hover{
         padding: 0.5rem 1rem;
@@ -90,7 +91,7 @@ body{
 
 .pag{
     scroll-snap-align: start;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
