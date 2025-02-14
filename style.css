@@ -1,4 +1,6 @@
-
+:root{
+    --white: white;
+}
 html{
     font-size: 62.5%;
     overflow: hidden;
@@ -90,7 +92,7 @@ body{
 
 
 .pag{
-    scroll-snap-align: start;
+    scroll-snap-align: start start;
     height: 100dvh;
     display: flex;
     justify-content: center;
@@ -99,16 +101,18 @@ body{
 }
 
 .inicio{
-    background-color: grey;
+    background-color: var(--white);
 }
 .nosotros{
-    background-color: darkgrey;
+    background-color: rgb(31, 31, 31);
+    color: var(--white);
 }
 .servicios{
-    background-color: gray;
+    background-color: rgb(49, 49, 49);
+    color: var(--white);
 }
 .contactos{
-    background-color: darkgray;
+    background-color: var(--white);
 }
 
 

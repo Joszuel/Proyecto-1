@@ -1,6 +1,8 @@
-let boton = document.getElementsByClassName("bot");
-let pag = document.getElementsByClassName("pag");
-let altura = document.querySelector(".pag").clientHeight
+const botones = document.querySelector(".caja_botones");
+const boton = document.querySelectorAll(".bot")
+const pag = document.querySelectorAll(".pag");
+const altura = document.querySelector(".pag").clientHeight
+
 window.addEventListener("scroll", ()=>{
 
     if (window.scrollY <= altura*0.5){
@@ -29,21 +31,23 @@ window.addEventListener("scroll", ()=>{
     }
 });
 
-window.onscroll = function() {
+ window.onscroll = function() {
 
-    console.log(window.scrollY)
+     console.log(window.scrollY)
     
-};
+ };
 
-boton[0].addEventListener("click", ()=>{
-    pag[0].scrollIntoView({behavior: 'smooth'})
-});
-boton[1].addEventListener("click", ()=>{ 
-    pag[1].scrollIntoView({behavior: 'smooth'})
-});
-boton[2].addEventListener("click", ()=>{
-    pag[2].scrollIntoView({behavior: 'smooth'})
-});
-boton[3].addEventListener("click", ()=>{
-    pag[3].scrollIntoView({behavior: 'smooth'})
-});
+botones.addEventListener("click",(e)=>{
+    if (e.target.textContent.toUpperCase() == "INICIO"){
+        pag[0].scrollIntoView({behavior: 'smooth'})
+    }
+    if (e.target.textContent.toUpperCase() == "NOSOTROS"){           
+        pag[1].scrollIntoView({behavior: 'smooth'})
+    }
+    if (e.target.textContent.toUpperCase() == "SERVICIOS"){           
+        pag[2].scrollIntoView({behavior: 'smooth'})
+    }
+    if (e.target.textContent.toUpperCase() == "CONTACTOS"){           
+        pag[3].scrollIntoView({behavior: 'smooth'})
+    }
+})
