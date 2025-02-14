@@ -1,10 +1,10 @@
 const botones = document.querySelector(".caja_botones");
 const boton = document.querySelectorAll(".bot")
 const pag = document.querySelectorAll(".pag");
-const altura = document.querySelector(".pag").clientHeight
+let altura = document.querySelector(".pag").clientHeight
 
 window.addEventListener("scroll", ()=>{
-
+    altura = document.querySelector(".pag").clientHeight
     if (window.scrollY <= altura*0.5){
         boton[0].classList.add("activado");
         boton[1].classList.remove("activado");
