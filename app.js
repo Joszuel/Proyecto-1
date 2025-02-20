@@ -17,13 +17,13 @@ window.addEventListener("scroll", ()=>{
         boton[2].classList.remove("activado");
         boton[3].classList.remove("activado");
     }
-    if (window.scrollY > altura*1.5 && window.scrollY < altura*2.5){
+    if (window.scrollY > altura*1.5 && window.scrollY < altura*3.5){
         boton[0].classList.remove("activado");
         boton[1].classList.remove("activado");
         boton[2].classList.add("activado");
         boton[3].classList.remove("activado");
     }
-    if (window.scrollY > altura*2.5 && window.scrollY < altura*3.5){
+    if (window.scrollY > altura*3.5 && window.scrollY < altura*4.5){
         boton[0].classList.remove("activado");
         boton[1].classList.remove("activado");
         boton[2].classList.remove("activado");
@@ -41,13 +41,13 @@ botones.addEventListener("click",(e)=>{
     if (e.target.textContent.toUpperCase() == "INICIO"){
         pag[0].scrollIntoView({behavior: 'smooth'})
     }
-    if (e.target.textContent.toUpperCase() == "NOSOTROS"){           
+    if (e.target.textContent.toUpperCase() == "SERVICIOS"){           
         pag[1].scrollIntoView({behavior: 'smooth'})
     }
-    if (e.target.textContent.toUpperCase() == "SERVICIOS"){           
+    if (e.target.textContent.toUpperCase() == "NOSOTROS"){           
         pag[2].scrollIntoView({behavior: 'smooth'})
     }
     if (e.target.textContent.toUpperCase() == "CONTACTOS"){           
-        pag[3].scrollIntoView({behavior: 'smooth'})
+        pag[4].scrollIntoView({behavior: 'smooth'})
     }
 })
