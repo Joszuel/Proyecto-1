@@ -131,6 +131,21 @@ span{
 
 }
 
+@media (max-width: 640px){
+
+    .bar{
+
+    }
+
+    .bot{
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .caja_botones{
+        justify-content: start;
+    }
+}
 
 .pag{
     scroll-snap-align: start start;
