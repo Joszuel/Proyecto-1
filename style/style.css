@@ -1,75 +1,91 @@
-:root{
+:root {
     --white: white;
     --tamaño1: 3.2rem;
     --tamaño2: 1.6rem;
     --tamaño3: 2.0rem
 }
+
 @font-face {
     font-family: 'Roboto-light';
     src: url('Roboto/static/Roboto-Light.ttf');
 }
+
 @font-face {
     font-family: 'Roboto-regular';
     src: url('Roboto/static/Roboto-Regular.ttf');
 }
+
 @font-face {
     font-family: 'Roboto-bold';
     src: url('Roboto/static/Roboto-ExtraBold.ttf');
 }
 
-html{
+html {
     font-family: 'Roboto-bold';
     font-size: 62.5%;
     overflow: hidden;
-    box-sizing:border-box;
-    overflow-y:scroll;
+    box-sizing: border-box;
+    overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    
-}
-html::-webkit-scrollbar{
-    display:none;
-}
-*, *:before, *:after { box-sizing: inherit; scroll-behavior: smooth;}
 
-h1, h2, h3, p{
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: var(--tamaño1);
 }
-h3{
-    font-size: var(--tamaño2);  
+
+h3 {
+    font-size: var(--tamaño2);
     font-family: 'Roboto-light';
 }
-p{
+
+p {
     font-family: 'Roboto-regular';
 }
-.sombra{
-    -webkit-box-shadow: 0px 0.9rem 0px 0px rgba(231,166,26,1);
-    -moz-box-shadow: 0px 0.9rem 0px 0px rgba(231,166,26,1);
-    box-shadow: 0px 0.9rem 0px 0px rgba(231,166,26,1);
+
+.sombra {
+    -webkit-box-shadow: 0px 0.9rem 0px 0px rgba(231, 166, 26, 1);
+    -moz-box-shadow: 0px 0.9rem 0px 0px rgba(231, 166, 26, 1);
+    box-shadow: 0px 0.9rem 0px 0px rgba(231, 166, 26, 1);
 }
 
-body{
+body {
     box-sizing: inherit;
     font-size: 1.6rem;
     height: 100%;
     margin: 0;
 }
 
-span{
+span {
     color: darkorange;
 }
 
-.caja_botones{
+.caja_botones {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.bot{
+.bot {
     font-size: var(--tamaño2);
     display: flex;
     justify-content: center;
@@ -88,7 +104,7 @@ span{
 }
 
 
-.activado{  
+.activado {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: chocolate;
@@ -96,15 +112,16 @@ span{
     transition: background-color 0.3s ease-in 0.2s;
 }
 
-@media (hover:hover){
-    .bot:hover{
+@media (hover:hover) {
+    .bot:hover {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         background-color: white;
         color: black;
         transition: background-color 0.5s;
     }
-    .activado:hover{
+
+    .activado:hover {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         background-color: chocolate;
@@ -112,17 +129,17 @@ span{
     }
 }
 
-.bar{
+.bar {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: black;
     border-radius: 1rem;
     height: 7rem;
     padding: 1rem;
 
-    position:fixed;
+    position: fixed;
     width: 92%;
     top: 2rem;
     left: 0;
@@ -131,23 +148,21 @@ span{
 
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
 
-    .bar{
+    .bar {}
 
-    }
-
-    .bot{
+    .bot {
         width: 6rem;
         font-size: 1.2rem;
     }
 
-    .caja_botones{
+    .caja_botones {
         justify-content: start;
     }
 }
 
-.pag{
+.pag {
     scroll-snap-align: start start;
     height: 100dvh;
     display: flex;
@@ -157,13 +172,13 @@ span{
     padding: 9rem 7rem 0rem 7rem;
 }
 
-.inicio{
+.inicio {
     background-color: var(--white);
     justify-content: left;
 }
 
 
-.inicio_contenido{
+.inicio_contenido {
     width: 60rem;
     height: 60rem;
     display: flex;
@@ -172,14 +187,14 @@ span{
     gap: 5rem;
 }
 
-.inicio_contenido_icono{
+.inicio_contenido_icono {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
-.inicio_contenido_texto{
+.inicio_contenido_texto {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -194,12 +209,12 @@ span{
     width: 15rem;
 }
 
-.inicio_contenido img{
+.inicio_contenido img {
     height: 5rem;
     width: 5rem;
 }
 
-.servicios{
+.servicios {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.8fr 1fr;
@@ -209,7 +224,7 @@ span{
     color: var(--white);
 }
 
-.servicios_caja{
+.servicios_caja {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -223,12 +238,12 @@ span{
     gap: 0.5rem;
 }
 
-.servicios_caja h2{
+.servicios_caja h2 {
     font-size: var(--tamaño3);
     width: 65%;
 }
 
-.servicios_caja_servicios{
+.servicios_caja_servicios {
     font-family: 'Roboto-bold';
     width: 90%;
     display: grid;
@@ -236,65 +251,82 @@ span{
     grid-template-rows: 1fr 1fr;
 }
 
-.servicios_caja_servicios div{
+@media (max-width: 720px) {
+
+    .servicios_caja {
+        width: 90%;
+        margin-top: 2rem;
+        margin:2rem auto 0 auto;
+        padding: 0;
+    }
+
+    .servicios_caja_servicios {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.servicios_caja_servicios div {
     background-color: black;
     border-radius: 2rem;
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     margin: 1.5rem 0.5rem;
     padding: 2rem;
 }
 
-.servicios_caja_servicios p{
+.servicios_caja_servicios p {
     width: 30rem;
 }
 
-.servicios_textos{
+.servicios_textos {
     display: flex;
     align-items: start;
     padding: 2rem 0;
 }
-.servicios_textos div{
+
+.servicios_textos div {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.servicios_textos p{
+.servicios_textos p {
     font-family: 'Roboto-light';
     font-size: var(--tamaño2);
 }
 
-.servicios_textos h2{
+.servicios_textos h2 {
     width: 30rem;
 }
 
-.nosotros{
+.nosotros {
     background-color: rgb(49, 49, 49);
     color: var(--white);
 }
 
-.contactos{
+.contactos {
     background-color: var(--white);
 }
 
 
-.bar img{
+.bar img {
     height: 90%;
 }
 
 
 
-@media (min-width: 720px){
-    .bot{
+@media (min-width: 720px) {
+    .bot {
         display: block;
         color: aliceblue;
         text-decoration: none;
         padding: 0.5rem 1rem;
     }
-    .activado{
+
+    .activado {
         color: black;
     }
 }
